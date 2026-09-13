@@ -4,11 +4,19 @@
 
 The default language is **English**. Polish and German can be switched in the Language menu.
 
-## Download / install
+## Download
 
-1. Copy `quizladder.app` **and** `quizladder.png` to `applications/` on device storage (`/mnt/ext1/applications/`).
-2. **Disconnect USB** (with PC Link active, apps often cannot see files).
-3. Launch **Quiz Ladder** from the applications menu.
+**[Download the latest release](https://github.com/Sableworks/pocketbook-verse-pro-quiz-ladder/releases/latest)** — ZIP with `quizladder.app` and `quizladder.png`, ready for your PocketBook. No build tools required.
+
+(GitHub does not allow uploading bare `.app` files, so the binary ships inside a ZIP.)
+
+## Install on device
+
+1. Download the ZIP from the [latest release](https://github.com/Sableworks/pocketbook-verse-pro-quiz-ladder/releases/latest) and unzip it.
+2. Connect the PocketBook via USB (PC Link / mass storage).
+3. Copy `quizladder.app` **and** `quizladder.png` to `applications/` on device storage (`/mnt/ext1/applications/`).
+4. **Disconnect USB** (important — with PC Link active, apps often cannot see files).
+5. Launch **Quiz Ladder** from the applications menu.
 
 Home saves an in-progress run. The next launch offers **Resume**. Language, question memory, stats, and high scores (amount + currency + date) live in `/mnt/ext1/.quizladder.ini`.
 
@@ -42,6 +50,8 @@ The question bank has **20+ unique items per rung** (hundreds in total), in all 
 | Exit app | **Home** |
 
 ## Build from source (optional)
+
+Only needed if you want to modify or rebuild the app. End users should use the [prebuilt release](https://github.com/Sableworks/pocketbook-verse-pro-quiz-ladder/releases/latest).
 
 The Docker image is the PocketBook ARM toolchain (`SDK-B300` 6.8). On Apple Silicon, force `linux/amd64`.
 
